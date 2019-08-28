@@ -16,9 +16,8 @@ unsigned long microseconds;
 double vReal[samples];
 double vImag[samples];
 
- //awsomkiller
-  int flag=0;
-  //
+
+  int flag=0; and
 
 #define SCL_INDEX 0x00
 #define SCL_TIME 0x01
@@ -132,7 +131,7 @@ double db =  20.0  * log10 (peakToPeak  +1.);
 
   mySerial.println("AT+CMGF=1"); // Configuring TEXT mode
   updateSerial();
-  mySerial.println("AT+CMGS=\"+919501181321\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
+  mySerial.println("AT+CMGS=\"+886XXXXXXXXX\"");//change ZZ with country code and xxxxxxxxxxx with phone number to sms
   updateSerial();
   mySerial.print("Last Minute Engineers | lastminuteengineers.com"); //text content
   updateSerial();
